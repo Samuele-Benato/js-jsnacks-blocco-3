@@ -38,15 +38,32 @@
 //   alert(secondWord);
 // }
 
-// traccia 3
+// traccia 3/3.b
 
-const container = [];
-let somma = 0;
+// const container = [];
+// let somma = 0;
+// let media;
+// while (somma < 50) {
+//   let userNumber = parseInt(prompt("inserisci un numero"));
+//   somma += userNumber;
+//   container.push(userNumber);
+//   media = somma / container.length;
+//   if (somma < 50) {
+//     container.push(userNumber);
+//   }
+// }
 
-while (somma < 50) {
-  let userNumber = parseInt(prompt("inserisci un numero"));
-  somma += userNumber;
-  container.push(userNumber);
+// console.log(container);
+// console.log(media);
+
+// traccia 4
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNumbers = [];
+for (let i = 0; i < numbers.length - 1; i++) {
+  if (numbers[i] % 2 == 0) {
+    evenNumbers.push(i);
+  }
 }
-
-console.log(container);
+console.log(evenNumbers);
+// dovrebbe restituire [1,3,5]
